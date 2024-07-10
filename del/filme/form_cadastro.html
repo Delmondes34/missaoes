@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_brv">
+<head>
+    <title>Formulario ede casdastro</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="corpo">
+    <div class="local">
+        <div class="borda">
+            <form action="sucesso_cadestro.html" class="forma">
+            <label form="nome" class="nome">Nome</label>
+            <input type="text" name="nome" required="required" maxlength="50" size="30"/>
+            <br/>
+            <label for="anoDeLancamento" class="ano">Ano de lançamento</label>
+            <input type="number" name="anoDeLancamento" required="required" min="1940" max="2024"/>
+            <br/>
+            <label for="sinops" class="sinops">Sinopse</label>
+            <textarea name="sinops" required="required" rows="5" cols="30"></textarea>
+             <br/>
+            <label for="genero" class="genero">Genero</label>
+            <select name="genero" required="required">
+            <option value="1">Ação</option>
+            <option value="1">comedia</option>
+            <option value="1">romance</option>
+            <option value="1">terro</option>
+            <option value="1">drama</option>
+            <option value="1">bosta</option>
+            <option value="1">ficsão</option>
+            <option value="1">ficsão cientifica</option>
+            </select>
+            <br/>
+            <label for="duracao" class="duracao">Duração</label>
+            <input type="number" name="duracao" required="required"/>
+            <br>
+            <label for="tipoAldio" class="idioma">Idioma</label>
+            <input type="radio" name="tipoAldio" value="1" required="required"/>Dublado
+            <input type="radio" name="tipoAldio" value="2" required="required"/>Legendado
+            <input type="radio" name="tipoAldio" value="3" required="required"/>Original
+            <br/>
+            <input type="submit" value="casdastrar" class="cadastrat"/>
+            <input type="reset" value="limpar" class="limpa"/>
+            </form>
+        </div>  
+</div>
+    </body>
+    </html>

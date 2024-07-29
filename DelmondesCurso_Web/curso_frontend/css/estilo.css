@@ -1,0 +1,48 @@
+.corpo2{
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(rgb(66, 10, 129) ,rgb(182, 157, 14) );
+}
+.titulo2{
+    color: aqua;
+    text-shadow: 2px 2px 4px rgba(red, green, blue, alpha);
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+.titulo{
+    color: aqua;
+    text-shadow: 2px 2px 4px rgba(red, green, blue, alpha);
+    text-overflow: ellipsis;
+}
+.corpo1{ 
+    color: rgb(0, 0, 0);
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(rgb(180, 29, 29),rgb(66, 10, 129) );
+}
+.Formulário{ 
+    background-color: rgb(49, 31, 128);
+    padding: auto;
+    display: inline-block;
+    border: 2px solid rgb(42, 94, 136);
+    margin: 20px; 
+}
+button{
+    background-color: aqua;
+    
+}
+
+
+
+
+
+corpo3{
+    background-color: rgb(40, 223, 255);
+    align-content: center;
+    text-align: center;
+}

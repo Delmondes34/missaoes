@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estiloForm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+</head>
+<body>
+      <div class="container">
+        <h1>cadastros de series</h1>
+            <form action="/submitform" class="row g-3 needs-validation" id="formulario" novalidate>
+              <div class="col-md-4">
+                <label form="identificador" class="identificador" for="validationServer01" class="form-label">identificador</label>
+                <input type="number" name="anoDeLancamento" required  class="form-control " id="identificador">
+              </div>
+              <div class="col-md-4">
+                <label form="nome" class="nome" for="validationServer01" class="form-label">Nome</label>
+                <input type="text" name="nome" required maxlength="50" size="30" id="nome"  aria-describedby="emailHelp" class="form-control"/>
+                <div class="valid-feedback">
+                  Parece bom!
+              </div>
+              </div>
+              <div  class="col-md-4"> 
+                <label for="anoDeLançamento" class="form-label">Ano de lançamento</label>
+                <input type="number" name="anoDeLancamento" required min="1940" max="2024" class="form-control " id="anoDeLançamento"  />
+                <div class="valid-feedback">
+                  Parece bom!
+              </div>
+              </div>  
+              <div>
+                <label for="sinopse" class="form-label">Sinopse</label>
+                <textarea name="sinops" rows="5" cols="30" class="form-control" id="sinopse" placeholder="Required example textarea" required ></textarea>
+                <div class="valid-feedback">
+                  Parece bom!
+                </div>
+              </div>
+              <div class="col-md-3"> 
+                <label for="genero"  for="genero" class="form-label">Genero</label>
+                <select nome="form-label" class="form-select " id="genero" aria-label="select example" required >
+                <option value="Ação">Ação</option>
+                <option value="comedia">comedia</option>
+                <option value="romance">romance</option>
+                <option value="terro">terro</option>
+                <option value="drama">drama</option>
+                <option value="bosta">bosta</option>
+                <option value="ficsão">ficsão</option>
+                <option value="ficsão cientifica">ficsão cientifica</option>
+                </select>
+                <div class="valid-feedback">
+                  Parece bom!
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="duracao" class="duracao" for="duracao" class="form-label">Duração</label>
+                <input type="number" name="duracao"  class="form-control" id="duracao" required/>
+                <div class="valid-feedback">
+                  Parece bom!
+                </div> 
+              </div> 
+              <div>
+                <label for="ep">Quantos episidios</label>
+                <input type="number" name="EP" required class="form-control" id="ep">
+                <div class="valid-feedback">
+                  Parece bom!
+                </div>
+              </div>
+              <div>  
+                <label for="tipoAudio" class="form-check" id="idioma">Idioma</label> 
+                <input class="form-check-input" type="radio" name="tipoAudio" id="dublado" value="Dublado"/> Dublado
+                <input class="form-check-input" type="radio" name="tipoAudio" id="legendado" value="Legendado"/> Legendado
+                <input class="form-check-input" type="radio" name="tipoAudio" id="original" value="Original"/>Original
+                <div class="valid-feedback">
+                  Parece bom!
+              </div>
+              </div>  
+              <div >
+                <input type="submit" value="casdastrar" class="btn btn-primary btn-lg" />
+              <div id="liveAlertPlaceholder">
+              <div>
+                <input type="reset" value="limpar"  class="btn btn-secondary btn-lg"/>
+              <div class="valid-feedback">
+                Parece bom!
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <br/><br/> 
+          <table class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th>identificador</th>
+                  <th>Nome</th>
+                  <th>Ano de lançamento</th>
+                  <th>Sinopse</th>
+                  <th>Genero</th>
+                  <th>Duração</th>
+                  <th>Quantos episidios</th>
+                  <th>Idioma</th>
+                  <th>Açoes</th>
+                </tr>
+              </thead>
+              <tbody id="corpoDaTable">
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+       
+
+      <script src="funsoes.js">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
